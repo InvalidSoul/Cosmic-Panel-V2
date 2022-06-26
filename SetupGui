@@ -1,100 +1,110 @@
 if not game:GetService("CoreGui"):FindFirstChild("CosmicPanelSetup") then
 	
 		local CosmicPanelSetup = Instance.new("ScreenGui")
-		local MainBackround = Instance.new("ImageLabel")
-		local MainBackroundCorner = Instance.new("UICorner")
-		local SecondaryBackround = Instance.new("Frame")
-		local SecondaryBackroundCorner = Instance.new("UICorner")
-		local CosmicLogo = Instance.new("ImageLabel")
-		local MainTitle = Instance.new("TextLabel")
-		local SaveSettingsButton = Instance.new("TextButton")
-		local SaveSettingsCorner = Instance.new("UICorner")
-		local UpdateButton = Instance.new("TextButton")
-		local UpdateButton_2 = Instance.new("UICorner")
+local MainBackround = Instance.new("ImageLabel")
+local MainBackroundCorner = Instance.new("UICorner")
+local SecondaryBackround = Instance.new("Frame")
+local SecondaryBackroundCorner = Instance.new("UICorner")
+local CosmicLogo = Instance.new("ImageLabel")
+local MainTitle = Instance.new("TextLabel")
+local SaveSettingsButton = Instance.new("TextButton")
+local SaveSettingsCorner = Instance.new("UICorner")
+local UpdateButton = Instance.new("TextButton")
+local UpdateButton_2 = Instance.new("UICorner")
+local DecorationLine = Instance.new("Frame")
+local DecorationLineCorner = Instance.new("UICorner")
 
-		--Properties:
+--Properties:
 
-		CosmicPanelSetup.Name = "CosmicPanelSetup"
-		CosmicPanelSetup.Parent = game:GetService("CoreGui")
-		CosmicPanelSetup.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+CosmicPanelSetup.Name = "CosmicPanelSetup"
+CosmicPanelSetup.Parent = game:GetService("CoreGui")
+CosmicPanelSetup.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-		MainBackround.Name = "MainBackround"
-		MainBackround.Parent = CosmicPanelSetup
-		MainBackround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		MainBackround.BackgroundTransparency = 1.000
-		MainBackround.Position = UDim2.new(0.288008571, 0, 0.204907984, 0)
-		MainBackround.Size = UDim2.new(0.423982859, 0, 0.590184033, 0)
-		MainBackround.Image = "rbxassetid://9703079470"
+MainBackround.Name = "MainBackround"
+MainBackround.Parent = CosmicPanelSetup
+MainBackround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainBackround.BackgroundTransparency = 1.000
+MainBackround.Position = UDim2.new(0.288008571, 0, 0.204907984, 0)
+MainBackround.Size = UDim2.new(0.423982859, 0, 0.590184033, 0)
+MainBackround.Image = "rbxassetid://9703079470"
 
-		MainBackroundCorner.CornerRadius = UDim.new(0, 16)
-		MainBackroundCorner.Name = "MainBackroundCorner"
-		MainBackroundCorner.Parent = MainBackround
+MainBackroundCorner.CornerRadius = UDim.new(0, 16)
+MainBackroundCorner.Name = "MainBackroundCorner"
+MainBackroundCorner.Parent = MainBackround
 
-		SecondaryBackround.Name = "SecondaryBackround"
-		SecondaryBackround.Parent = MainBackround
-		SecondaryBackround.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-		SecondaryBackround.BorderSizePixel = 0
-		SecondaryBackround.Position = UDim2.new(0.0126262624, 0, 0.0166320167, 0)
-		SecondaryBackround.Size = UDim2.new(0.973484874, 0, 0.966735959, 0)
+SecondaryBackround.Name = "SecondaryBackround"
+SecondaryBackround.Parent = MainBackround
+SecondaryBackround.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+SecondaryBackround.BorderSizePixel = 0
+SecondaryBackround.Position = UDim2.new(0.0126262624, 0, 0.0166320167, 0)
+SecondaryBackround.Size = UDim2.new(0.973484874, 0, 0.966735959, 0)
 
-		SecondaryBackroundCorner.CornerRadius = UDim.new(0, 16)
-		SecondaryBackroundCorner.Name = "SecondaryBackroundCorner"
-		SecondaryBackroundCorner.Parent = SecondaryBackround
+SecondaryBackroundCorner.CornerRadius = UDim.new(0, 16)
+SecondaryBackroundCorner.Name = "SecondaryBackroundCorner"
+SecondaryBackroundCorner.Parent = SecondaryBackround
 
-		CosmicLogo.Name = "CosmicLogo"
-		CosmicLogo.Parent = SecondaryBackround
-		CosmicLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		CosmicLogo.BackgroundTransparency = 1.000
-		CosmicLogo.Position = UDim2.new(0.0181582365, 0, 0, 0)
-		CosmicLogo.Size = UDim2.new(0.129701689, 0, 0.215053767, 0)
-		CosmicLogo.Image = "rbxassetid://10022875739"
+CosmicLogo.Name = "CosmicLogo"
+CosmicLogo.Parent = SecondaryBackround
+CosmicLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CosmicLogo.BackgroundTransparency = 1.000
+CosmicLogo.Position = UDim2.new(0.00907911826, 0, 0, 0)
+CosmicLogo.Size = UDim2.new(0.112840466, 0, 0.187096775, 0)
+CosmicLogo.Image = "rbxassetid://10022875739"
 
-		MainTitle.Name = "MainTitle"
-		MainTitle.Parent = SecondaryBackround
-		MainTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		MainTitle.BackgroundTransparency = 1.000
-		MainTitle.Position = UDim2.new(0.280165464, 0, 0.0493953004, 0)
-		MainTitle.Size = UDim2.new(0, 339, 0, 53)
-		MainTitle.Font = Enum.Font.GothamBold
-		MainTitle.Text = "Cosmic Panel"
-		MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-		MainTitle.TextScaled = true
-		MainTitle.TextSize = 14.000
-		MainTitle.TextWrapped = true
+MainTitle.Name = "MainTitle"
+MainTitle.Parent = SecondaryBackround
+MainTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainTitle.BackgroundTransparency = 1.000
+MainTitle.Position = UDim2.new(0.280165464, 0, 0.0493953004, 0)
+MainTitle.Size = UDim2.new(0.439688712, 0, 0.113978498, 0)
+MainTitle.Font = Enum.Font.GothamBold
+MainTitle.Text = "Cosmic Panel"
+MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainTitle.TextScaled = true
+MainTitle.TextSize = 14.000
+MainTitle.TextWrapped = true
 
-		SaveSettingsButton.Name = "SaveSettingsButton"
-		SaveSettingsButton.Parent = SecondaryBackround
-		SaveSettingsButton.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-		SaveSettingsButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
-		SaveSettingsButton.BorderSizePixel = 0
-		SaveSettingsButton.Position = UDim2.new(0.535668015, 0, 0.851612926, 0)
-		SaveSettingsButton.Size = UDim2.new(0, 283, 0, 50)
-		SaveSettingsButton.Font = Enum.Font.GothamBold
-		SaveSettingsButton.Text = "Save Settings"
-		SaveSettingsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-		SaveSettingsButton.TextScaled = true
-		SaveSettingsButton.TextSize = 14.000
-		SaveSettingsButton.TextWrapped = true
+SaveSettingsButton.Name = "SaveSettingsButton"
+SaveSettingsButton.Parent = SecondaryBackround
+SaveSettingsButton.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+SaveSettingsButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+SaveSettingsButton.BorderSizePixel = 0
+SaveSettingsButton.Position = UDim2.new(0.516212761, 0, 0.851612926, 0)
+SaveSettingsButton.Size = UDim2.new(0.367055774, 0, 0.107526883, 0)
+SaveSettingsButton.Font = Enum.Font.GothamBold
+SaveSettingsButton.Text = "Save Settings"
+SaveSettingsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SaveSettingsButton.TextSize = 39.000
+SaveSettingsButton.TextWrapped = true
 
-		SaveSettingsCorner.Name = "SaveSettingsCorner"
-		SaveSettingsCorner.Parent = SaveSettingsButton
+SaveSettingsCorner.Name = "SaveSettingsCorner"
+SaveSettingsCorner.Parent = SaveSettingsButton
 
-		UpdateButton.Name = "UpdateButton"
-		UpdateButton.Parent = SecondaryBackround
-		UpdateButton.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-		UpdateButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
-		UpdateButton.BorderSizePixel = 0
-		UpdateButton.Position = UDim2.new(0.097276248, 0, 0.851612926, 0)
-		UpdateButton.Size = UDim2.new(0, 283, 0, 50)
-		UpdateButton.Font = Enum.Font.GothamBold
-		UpdateButton.Text = "Update"
-		UpdateButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-		UpdateButton.TextScaled = true
-		UpdateButton.TextSize = 14.000
-		UpdateButton.TextWrapped = true
+UpdateButton.Name = "UpdateButton"
+UpdateButton.Parent = SecondaryBackround
+UpdateButton.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+UpdateButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+UpdateButton.BorderSizePixel = 0
+UpdateButton.Position = UDim2.new(0.118028522, 0, 0.851612926, 0)
+UpdateButton.Size = UDim2.new(0.367055774, 0, 0.107526883, 0)
+UpdateButton.Font = Enum.Font.GothamBold
+UpdateButton.Text = "Update"
+UpdateButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateButton.TextSize = 39.000
+UpdateButton.TextWrapped = true
 
-		UpdateButton_2.Name = "UpdateButton"
-		UpdateButton_2.Parent = UpdateButton
+UpdateButton_2.Name = "UpdateButton"
+UpdateButton_2.Parent = UpdateButton
+
+DecorationLine.Name = "DecorationLine"
+DecorationLine.Parent = SecondaryBackround
+DecorationLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DecorationLine.Position = UDim2.new(0.0492866375, 0, 0.187096775, 0)
+DecorationLine.Size = UDim2.new(0.899999976, 0, 0.00800000038, 0)
+
+DecorationLineCorner.CornerRadius = UDim.new(0, 32)
+DecorationLineCorner.Name = "DecorationLineCorner"
+DecorationLineCorner.Parent = DecorationLine
 		
 	else if game:GetService("CoreGui"):FindFirstChild("CosmicPanelSetup") then
 			game:GetService("CoreGui"):FindFirstChild("CosmicPanelSetup"):Destroy()
